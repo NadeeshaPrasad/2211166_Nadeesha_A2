@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>
+            Profile 
+        </title>
+        <link rel="stylesheet" href="main.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      </head>
+      <body>
+      
+      <nav class="prof-nav">
+        <img src="./src/612641.jpg">
+        <h4><script>document.write(localStorage.getItem('name'));</script></h4>
+      </nav>
+
+      <div>
+      <input type="submit" class="logout-btn" onclick="Logout();" value="Logout"></button>
+      </div>
+        
+      <div class="prof-container">
+        <div class="prof-cont">
+        <img src="./src/612641.jpg">
+        <div class="pf-name">
+           <script>document.write(localStorage.getItem('name'));</script>
+          </div>
+          <div class="pf-email"> 
+          <script>document.write(localStorage.getItem('email'));</script>
+          </div>
+          <button class="create-btn" onclick="CreatUser();">Create User</button>
+      </div>
+      </div>
+         
+      
+      </body>
+      <script>
+
+    
+        function CreatUser()
+        {
+          window.location.href="SignUp.html";
+        }
+
+        function Logout()
+        {
+          window.location.href="Signin.html";
+        }
+  </script>
+      </html>
+      
